@@ -158,7 +158,6 @@ def play_chess():
 	while game == 0:
 		game = move_piece(my_board, game)
 		if game == 0:
-			print 'An okay move, I guess... '
 			sleep(0.5)
 			print_board(my_board)
 
