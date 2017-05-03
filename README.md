@@ -1,3 +1,5 @@
+NOTE: This repo was made for the sole purpose of familiarizing myself with how to use github.
+
 # play-chess
 play chess with a simple python script
 
