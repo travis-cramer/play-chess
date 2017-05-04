@@ -131,6 +131,7 @@ def play_chess():
 	print_instructions()
 	my_board = make_board()
 	my_board = set_board(my_board)
+	os.system('clear')
 	print_board(my_board)
 	while game == 0:
 		game = move_piece(my_board, game)
