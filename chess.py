@@ -1,4 +1,5 @@
 from time import sleep
+import os
 
 error_msg = 'Invalid input. You are disqualified.'
 alpha = 'abcdefgh'
@@ -9,31 +10,6 @@ for i in range(8):
 	coordinate_dict[alpha[i]] = i + 1
 
 def print_instructions():
-	print """
-	Hello. Welcome to Chess. 
-	It's a brand new game. 
-	You are the first to ever play it.
-	"""
-	sleep(1)
-	print """
-	When stating your move, state it 
-	in this fashion: 
-	'a4 to c6' or 'e2 to e4'. 
-	Be careful. An invalid input is 
-	an immediate disqualification.
-	"""
-	sleep(1)
-	print """
-	Also, if someone wins, 
-	please let me know so that I can 
-	end the game. 
-	Just have the winner enter: 'I won'.
-	Typing 'End' also works, but it's 
-	not as fun.
-				Thanks :)
-
-
-				"""
 	sleep(1)
 	print "Get ready..."
 	sleep(1)
@@ -114,10 +90,11 @@ def set_board(board):
 
 def move_piece(board, game):
 	move = raw_input('Enter move: ')
+
 	if len(move) != 8:
 		if move == 'End' or move == 'I won':
 			game = 1
-			print 'Good job. You beat your friend. How kind.'
+			print 'Good job. You destroyed your friend. How kind.'
 		else:
 			print error_msg
 			game = 1
@@ -159,6 +136,7 @@ def play_chess():
 		game = move_piece(my_board, game)
 		if game == 0:
 			sleep(0.5)
+			os.system('clear')
 			print_board(my_board)
 
 
