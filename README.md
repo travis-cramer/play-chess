@@ -1,20 +1,23 @@
-NOTE: This repo was made for the sole purpose of familiarizing myself with how to use github.
+NOTE: This repo was made mostly for the purpose of familiarizing myself with github.
 
 # play-chess
-play chess with a simple python script
+create a simple functioning chess board with a single python script
 
 
-Run this script: chess.py
+chess.py
 Written for Python 2.7
 
 Ignore other scripts.
 
 
-Run chess.py in Terminal/Command Line to use a functional chess board.
+Run chess.py in Terminal/Command Line.
 
 Use standard chess commands to move pieces:
 e.g. 
-"e2 to e4" will move the piece (at the beginning of the game, the pawn) 
+"e2 to e4" will move the piece (which is, at the beginning of the game, the pawn) 
 that is currently on the e2 square to the e4 square.
+
+It is like a real chess board in that you can move any piece to any square. It's up to you to follow
+the rules of chess gameplay.
 
 Have fun!
