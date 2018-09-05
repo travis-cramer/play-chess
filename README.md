@@ -1,13 +1,8 @@
-NOTE: This repo was made mostly for the purpose of familiarizing myself with github.
-
 # play-chess
 create a simple functioning chess board with a single python script
 
-
 chess.py
 Written for Python 2.7
-
-Ignore other scripts.
 
 
 Run chess.py in Terminal/Command Line.
